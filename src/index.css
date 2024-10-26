@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Roboto";
+  src: url("./font/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./font/Roboto/Roboto-BlackItalic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./font/Roboto/Roboto-Bold.ttf");
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --orange: rgb(240 99 20);
+  --dark: #222;
+  --gray: #ddd;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+body{
+  /* prompt für das AI generierte Background Images */
+  /* a modern abstract background image with orange, white and gray geometric shapes with a top left to bottom right dynamic and white as the main background color */
+  /* background-color: white;
+  background-image: url("./img/backgroundImg.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover; */
+  color: var(--dark);
+}
+
+button.primary{
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+  font-size: 20px;
 }

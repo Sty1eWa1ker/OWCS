@@ -1,0 +1,28 @@
+.article-page{
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 32px;
+    & h1{
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+    & .article-date{
+        margin-bottom: 32px;
+        & p{
+            font-style: italic;
+            color: #666;
+        }
+    }
+}
+section{
+    padding-block: 32px;
+    font-size: 1.5rem;
+    & h3{
+        padding-bottom: 16px;
+        font-size: 1.75rem;
+    }
+    & p{
+        text-wrap: pretty;
+        max-width: 75ch;
+    }
+}

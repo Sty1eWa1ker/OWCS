@@ -1,0 +1,99 @@
+.rankings-table{
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 32px;
+}
+.table-grid{
+    display: grid;
+    grid-template-rows: 32px auto;
+    gap: 8px;
+}
+.table-header{
+    display: grid;
+    grid-template-columns: 80px 300px auto 160px;
+    gap: 4px;
+    background-color: var(--gray);
+    color: var(--dark);
+    font-weight: bold;
+    text-align: center;
+    height: 32px;
+
+}
+.heading-cell{
+    align-self: center;
+}
+.table-body{
+    display: grid;
+    grid-template-columns: 80px 300px auto 160px;
+    row-gap: 4px;
+    background-color: #efefef;
+}
+.rank-cell, .team-cell, .player-cell, .points-cell{
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.rank-cell{
+    background-color: var(--gray);
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    &:first-child, &:nth-child(5), &:nth-child(9){
+        background-color: var(--orange);
+        color: #fff;
+    }
+}
+.team-cell{
+    justify-content: start;
+    padding-inline: 8px;
+    gap: 8px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    & img{
+        height: 32px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+    }
+}
+.player-cell{
+    justify-content: start;
+    gap: 8px;
+}
+.points-cell{
+    justify-content: center;
+    background-color: var(--gray);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.player-block{
+    text-transform: uppercase;
+    background-color: var(--dark);
+    color: #fff;
+    transform: skewX(-20deg);
+    padding-inline: 16px;
+    padding-block: 8px;
+}
+.unskew{
+    transform: skewX(20deg);
+}
+.cutoff{
+    grid-column: 1/5;
+    padding-block: 4px;
+    padding-inline: 8px;
+    color: var(--orange);
+    background-color: #fff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    & .cutoff-line{
+        width: 100%;
+        height: 2px;
+        background-color: var(--orange);
+    }
+    & span{
+        font-weight: bold;
+        font-size: 1rem;
+        min-width: 230px;
+    }
+}

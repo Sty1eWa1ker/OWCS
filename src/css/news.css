@@ -1,0 +1,94 @@
+.news{
+    width: 70%;
+    margin-inline: auto;
+    padding-bottom: calc(446px + 64px); 
+    position: relative;
+}
+main:has(.news){
+    background-color: var(--dark);
+    color: #fff;
+    padding-top: 64px;
+}
+.news-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 16px;
+    margin-bottom: 64px;
+    & h1{
+        font-weight: bold;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+}
+.skewed-container{
+    background-color: var(--orange);
+    color: #fff;
+    transform: skewX(-20deg);
+    padding-inline: 16px;
+    padding-block: 8px;
+}
+.articles-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.news-footer{
+    left: -15vw;
+    bottom: 0;
+    position: absolute;
+    min-height: 128px;
+    background-color: #fff;
+    border-top: var(--orange) 4px solid;
+    width: calc(100vw - 15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us{
+    background-color: var(--dark);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-direction: column;
+    padding: 32px;
+    padding-block: 64px;
+    margin: 64px;
+    box-shadow: 8px 8px 8px 5px rgba(0, 0, 0, 0.2);
+    & h2{
+        font-weight: bold;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+}
+.social-buttons{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 32px;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+    & button{
+        background-color: #333;
+        height: 64px;
+        width: 256px;
+        border: none;
+        transition: all 0.2s ease-in-out;
+        & a{
+            color: #fff;
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        &:hover{
+            background-color: var(--orange);
+        }
+    }
+}
