@@ -80,7 +80,7 @@ export default function Rankings() {
         </> 
     ));
     return (
-        <div className="page">
+        <div className="page rankings">
             <div className="page-header">
                 <h2>Rankings</h2>
                 <span>last updated {updateDate}</span>

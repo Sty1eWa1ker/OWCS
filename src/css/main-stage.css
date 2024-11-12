@@ -1,0 +1,168 @@
+.schedule-container:has(.main-stage-grid){
+    width: 90%;
+}
+.main-stage-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Round1 Winner1 WinnerFinals GrandFinals GrandFinals"
+                         "Loser1 Loser2 Loser3 LoserFinals emty";
+    row-gap: 64px;
+    column-gap: 16px;
+}
+.round-one{
+    grid-area: Round1;
+}
+.winner-one{
+    grid-area: Winner1;
+}
+.winner-two{
+    grid-area: Winner2;
+}
+.winner-finals{
+    grid-area: WinnerFinals;
+}
+.grand-final{
+    grid-area: GrandFinals;
+    padding-inline: 32px;
+    & .phase-day{
+        min-width: 40%;
+    }
+    & .phase-matches{
+        justify-content: start;
+        gap: 76px;
+        width: 100%;
+        & .match{
+            width: 100%;
+        }
+    }
+}
+.loser-one{
+    grid-area: Loser1;
+}
+.loser-two{
+    grid-area: Loser2;
+}
+.loser-three{
+    grid-area: Loser3;
+}
+.loser-four{
+    grid-area: Loser4;
+}
+.loser-finals{
+    grid-area: LoserFinals;
+}
+.main-stage-phase{
+    justify-self: center;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    width: 100%;
+}
+.phase-day{
+    align-self: center;
+    background-color: var(--dark);
+    color: #fff;
+    padding: 16px 8px;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 70%;
+}
+.phase-matches{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    gap: 8px;
+    padding-inline: 8px;
+    & .match{
+        width: 264px;
+        display: grid;
+        grid-template-areas: "gameNr team1"
+                            "gameNr team2";
+        grid-template-columns: 32px 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: auto;
+    }
+    & .team{
+        display: flex;
+        width: 100%;
+    }
+}
+.game-number{
+    grid-area: gameNr;
+    background-color: var(--dark);
+    color: #fff;
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & p{
+        transform: rotate(-90deg);
+        text-wrap: nowrap;
+        font-weight: bold;
+    }
+}
+.team1{
+    grid-area: team1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.team2{
+    grid-area: team2;
+}
+.team-score{
+    margin-inline: 8px;
+    height: 32px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+.team-name{
+    display: flex;
+    min-height: 64px;
+    align-items: center;
+    gap: 8px;
+    & p{
+        font-size: 1.15rem;
+        text-wrap: balance;
+    }
+}
+.bracket-title{
+    position: absolute;
+    left: -160px;
+    & h2{
+        transform: rotate(-90deg);
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--orange);
+    }
+}
+.upper-bracket{
+    top: 324px;
+}
+.lower-bracket{
+    top: calc(324px * 3 + 64px);
+}
+.finals-title{
+    align-self: center;
+    background-color: var(--dark);
+    color: #fff;
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    & img{
+        height: 64px;
+    }
+    & h2{
+        font-size: 3rem;
+    }
+}

@@ -6,6 +6,10 @@
 }
 main:has(.news){
     background-color: var(--dark);
+    background: url('../img/dark-bg-graphic.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     padding-top: 64px;
 }

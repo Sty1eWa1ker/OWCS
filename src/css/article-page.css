@@ -1,3 +1,10 @@
+main:has(.article-page){
+    background: url('../img/lines-light.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
 .article-page{
     width: 80%;
     margin-inline: auto;

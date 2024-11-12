@@ -9,6 +9,9 @@ nav{
     transform: skewX(-20deg);
     z-index: 9999;
 }
+nav>ul{
+    width: 100%;
+}
 nav ul{
     list-style: none;
     display: flex;
@@ -31,5 +34,62 @@ nav ul{
     }
     & img{
         width: 128px;
+    }
+}
+.dropdown{
+    position: relative;
+    & ul{
+        transform: skewX(-20deg);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-inline: 16px;
+        padding-block: 8px;
+        position: absolute;
+        top: 16px;
+        left: -50%;
+        background-color: white;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        & li a{
+            padding-inline: 32px;
+            color: #eee;
+        }
+    }
+}
+.primary.twitch, .primary.youtube{
+    transform: skewX(20deg);
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    transition: all 0.2s ease-in-out;
+    & img{
+        width: 32px;
+    }
+    & a{
+        padding-inline: 8px;
+    }
+}
+
+.primary.twitch{
+    background-color: var(--twitch-purple);
+    &:hover{
+        box-shadow: 4px 4px 8px 0 var(--twitch-glow);
+    }
+    &:hover a{
+        background-color: transparent;
+        color: #fff;
+    }
+    
+}
+.primary.youtube{
+    background-color: var(--youtube-red);
+    &:hover{
+        box-shadow: 2px 2px 8px 0 var(--youtube-red);
+    }
+    &:hover a{
+        background-color: transparent;
+        color: #fff;
     }
 }

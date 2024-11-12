@@ -17,6 +17,9 @@
   --orange: rgb(240 99 20);
   --dark: #222;
   --gray: #ddd;
+  --twitch-purple: #5c16c5;
+  --twitch-glow: #bf94ff;
+  --youtube-red: #FF0033;
 }
 
 *, *::after, *::before {
@@ -26,13 +29,6 @@
   font-family: Roboto;
 }
 body{
-  /* prompt für das AI generierte Background Images */
-  /* a modern abstract background image with orange, white and gray geometric shapes with a top left to bottom right dynamic and white as the main background color */
-  /* background-color: white;
-  background-image: url("./img/backgroundImg.png");
-  background-position: center;
-  background-repeat: repeat-y;
-  background-size: cover; */
   color: var(--dark);
 }
 
@@ -41,7 +37,6 @@ button.primary{
   color: white;
   border: none;
   padding: 8px 16px;
-  border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
   font-size: 20px;

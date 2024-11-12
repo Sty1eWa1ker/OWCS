@@ -1,3 +1,10 @@
+main:has(.rankings){
+    background: url('../img/lines-light.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
 .rankings-table{
     width: 80%;
     margin-inline: auto;
