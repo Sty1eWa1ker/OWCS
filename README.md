@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# SAE Projekt: Eine Webseite erstellen
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Die Schüler sollen eine Webseite erstellen um die Grundlagen von HTML und CSS zu vertiefen, das Thema der Webseite kann dabei frei gewählt werden.
+Die Webseite solle einen gewissen Grad an Responsive Webdesign enthalten (z.B. Media-Queries)  
+Zusätzlich dazu haben manche Schüler noch eine Zugang zu einem KI-Chatbot bekommen, mit dem sie arbeiten können um die Webseite zu erstellen.
+Alle Erzeugnisse die mit unterstützung der KI entstanden sind, sollen als Kommentar im Code dokumentiert werden (genutzter Propmt).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Mein Projekt: Overwatch Champions Series Webseite
 
-### `npm start`
+Ich mache eine Webseite für die E-Sport Liga des Spiels Overwatch (Overwatch Champions Series = OWCS)
+Die Webseite enthällt vier Hauptseiten:
+1. Home-Seite: Hier wird das Turnierformat der E-Sport Liga erläutert und generelle Informationen dargestellt.
+2. Schedule-Seite: Auf dieser Seite werden die Spiele der einzelnen Stages dargestellt, die normalen Gruppen Stages werden listenartig dargestellt und die Main-Events in einem Turnierbaum.
+3. Rankings-Seite: Auf dieser Seite werden die Ranglisten der beiden Regionen EMEA und NA tabelarisch dargestellt.
+4. News-Seite: Eine Seite auf der mehrere News Artikel zu der OWCS als Card-Elementen angeordnet sind, mit click auf das Card-Element gelangt man auf den Artikel.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technische Umsetztung
 
-### `npm test`
+Ich habe die Webseite mit dem JavaScript Framework React und nativem CSS erstellt.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Zum Starten der Webseite muss man NPM und Node.js installiert haben.
+1. Im Terminal zu dem Projektordner navigieren
+2. Im Projektordner: den Befehl `npm install` ausführen
+3. Den Befehl `npm start` ausführen um den NPM Server zu starten
+4. Ein Browser sollte sich nun von selbst öffnen und den NPM Server mit der React App öffnen
+Falls sich der Browser nicht von selbst öffnet kann man auch unter [localhost:187](http://localhost:187/) die React App selber öffnen.
